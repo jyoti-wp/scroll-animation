@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=Chango&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ccfff7;
+  font-family: "Chango", cursive;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  overflow-x: hidden;
+}
+
+h1 {
+  margin: 20px;
+}
+
+.box {
+  align-items: center;
+  background-color: #99ffff;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 545px;
+  height: 200px;
+  border-radius: 20px;
+  box-shadow: 7px 7px 5px 0px rgb(101 179 179 / 75%);
+  margin: 10px;
+  transform: translateX(400%);
+  transition: transform 0.4s ease;
+}
+
+.box:nth-of-type(even) {
+  transform: translateX(-350%);
+}
+
+.box.show {
+  transform: translateX(0);
+}
+
+.box h2 {
+  font-size: 45px;
+}
